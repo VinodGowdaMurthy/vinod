@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [guru99BankApplication]">
+  <listeners>
+    <listener class-name="com.bank.qa.utlity.ExtentReport"/>
+  </listeners>
+  <test thread-count="5" name="guruBankApplication(failed)">
+    <classes>
+      <class name="com.bank.qa.pageTest.HomePageTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="verfiyMangerAccount"/>
+          <include name="setDown"/>
+          <include name="setUp1"/>
+        </methods>
+      </class> <!-- com.bank.qa.pageTest.HomePageTest -->
+    </classes>
+  </test> <!-- guruBankApplication(failed) -->
+</suite> <!-- Failed suite [guru99BankApplication] -->

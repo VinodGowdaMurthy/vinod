@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="3" guice-stage="DEVELOPMENT" name="Failed suite [Parell test]" parallel="methods">
+  <test thread-count="3" name="chrometest(failed)" parallel="methods">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.bank.qa.pageTest.HomePageTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="verfiyMangerAccount"/>
+          <include name="loadlog4j"/>
+          <include name="setDown"/>
+          <include name="setUp1"/>
+        </methods>
+      </class> <!-- com.bank.qa.pageTest.HomePageTest -->
+    </classes>
+  </test> <!-- chrometest(failed) -->
+  <test thread-count="3" name="firefoxtest(failed)" parallel="methods">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="com.bank.qa.pageTest.HomePageTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="verfiyMangerAccount"/>
+          <include name="loadlog4j"/>
+          <include name="setDown"/>
+          <include name="setUp1"/>
+        </methods>
+      </class> <!-- com.bank.qa.pageTest.HomePageTest -->
+      <class name="com.bank.qa.pageTest.LoginPageTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="loadlog4j"/>
+          <include name="setDown"/>
+          <include name="getPageTittle"/>
+          <include name="loginIntoApplication"/>
+        </methods>
+      </class> <!-- com.bank.qa.pageTest.LoginPageTest -->
+    </classes>
+  </test> <!-- firefoxtest(failed) -->
+</suite> <!-- Failed suite [Parell test] -->

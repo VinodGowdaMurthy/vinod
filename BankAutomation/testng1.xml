@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="3" name="Parell test" parallel="methods">
+  <test name="chrometest">
+  <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.bank.qa.baseTest.TestBase"/>
+      <class name="com.bank.qa.pageTest.HomePageTest"/>
+      <class name="com.bank.qa.pageTest.LoginPageTest"/>
+    </classes>
+  </test> 
+  <test name="firefoxtest">
+  <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="com.bank.qa.baseTest.TestBase"/>
+      <class name="com.bank.qa.pageTest.HomePageTest"/>
+      <class name="com.bank.qa.pageTest.LoginPageTest"/>
+    </classes>
+  </test> 
+</suite> <!-- Parell test -->

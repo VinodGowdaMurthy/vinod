@@ -1,0 +1,12 @@
+
+
+<suite name="guru99BankApplication">
+<listeners>
+  <listener class-name="com.bank.qa.utlity.ExtentReport"/>
+</listeners>
+  <test name="guruBankApplication">
+    <classes>
+       <class name="com.bank.qa.pageTest.LoginPageTest"/> 
+    </classes>
+  </test>
+</suite>
